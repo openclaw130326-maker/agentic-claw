@@ -175,3 +175,15 @@ footer a{color:var(--gold)} footer a:hover{color:#EDC266}
   .compare tbody td:first-child{font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:var(--green);padding-bottom:2px}
   .compare td.no,.compare td.yes{font-weight:600}
 }
+/* Pricing (2026-11-17) */
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:16px;max-width:980px}
+.tier{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.tier.featured{border:2px solid var(--gold);box-shadow:0 6px 24px rgba(226,176,74,.14)}
+.price{font-family:var(--serif);font-size:56px;font-weight:600;line-height:1}
+.price small{font-family:var(--mono);font-size:14px;color:var(--ink-2);font-weight:400}
+.tier .kicker{color:var(--green);font-size:12px}
+.tier.featured .kicker{color:#8C6A3F}
+.tier ul{margin:0;padding:0 0 0 20px;font-size:15px;color:var(--ink-2);display:grid;gap:8px}
+.tier footer{margin-top:auto}
+.tier .tag-top{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:#8C6A3F}
+.credit{background:var(--card);border:1px dashed var(--rule);border-radius:6px;padding:24px;font-size:15px;color:var(--ink-2);max-width:980px}
