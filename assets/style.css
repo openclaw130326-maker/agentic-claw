@@ -162,3 +162,16 @@ footer a{color:var(--gold)} footer a:hover{color:#EDC266}
 .scenes figcaption{padding:10px 14px;font-size:13px}
 .scenes figcaption span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--green)}
 .tablewrap{overflow-x:auto;border-radius:6px}
+/* Compare table responsive fix (2026-11-17): kill hard column widths, scroll on desktop, stack rows on mobile */
+.compare th,.compare td{width:auto}
+.tablewrap{-webkit-overflow-scrolling:touch}
+.compare{min-width:640px}
+@media (max-width:760px){
+  .tablewrap{overflow-x:visible;border-radius:6px;border:none}
+  .compare{min-width:0;border:none;background:transparent}
+  .compare thead{display:none}
+  .compare tbody tr{display:block;background:var(--card);border:1px solid var(--rule);border-radius:6px;margin-bottom:10px;padding:6px 0}
+  .compare tbody td{display:block;padding:6px 14px;border-bottom:none}
+  .compare tbody td:first-child{font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:var(--green);padding-bottom:2px}
+  .compare td.no,.compare td.yes{font-weight:600}
+}
