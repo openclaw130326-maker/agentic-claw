@@ -142,3 +142,23 @@ footer a{color:var(--gold)} footer a:hover{color:#EDC266}
   .rules ol{font-size:18px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Stack ladder + comparison + scenes (2026-11-17) */
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:10px}
+.ladder .rung{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--gold);border-radius:6px;padding:16px}
+.ladder .rung span{display:block;font-family:var(--mono);font-size:12px;color:var(--green);margin-bottom:4px}
+.ladder .rung h3{font-size:19px;font-weight:600;margin:0 0 6px}
+.ladder .rung p{margin:0;font-size:14px;color:var(--ink-2)}
+.compare{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--card);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.compare th,.compare td{padding:12px 14px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+.compare thead th{background:var(--canopy);color:var(--on-canopy);font-size:13px;font-family:var(--mono);letter-spacing:.05em}
+.compare td:first-child{font-weight:600;max-width:190px}
+.compare td:not(:first-child){width:230px}
+.compare .yes{color:var(--green);font-weight:600}
+.compare .no{color:#9C4A3C;font-weight:600}
+.scenes{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:16px}
+.scenes figure{margin:0;background:var(--card);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.scenes img{aspect-ratio:3/2;object-fit:cover;width:100%}
+.scenes figcaption{padding:10px 14px;font-size:13px}
+.scenes figcaption span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--green)}
+.tablewrap{overflow-x:auto;border-radius:6px}
