@@ -187,3 +187,8 @@ footer a{color:var(--gold)} footer a:hover{color:#EDC266}
 .tier footer{margin-top:auto}
 .tier .tag-top{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:#8C6A3F}
 .credit{background:var(--card);border:1px dashed var(--rule);border-radius:6px;padding:24px;font-size:15px;color:var(--ink-2);max-width:980px}
+/* Scenes: respect original painting aspect (mobile alignment fix, 2026-11-17)
+   portrait (2:3 originals → 4:5 box) · square (1:1) — subject kept via object-position */
+.scenes figure.p-portrait img{aspect-ratio:4/5;object-position:50% 40%}
+.scenes figure.p-square img{aspect-ratio:1/1;object-position:50% 25%}
+.scenes figure.p-nest img{aspect-ratio:4/5;object-position:50% 55%}
